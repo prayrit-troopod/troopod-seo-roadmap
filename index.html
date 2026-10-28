@@ -249,8 +249,9 @@
       <a href="#step2">Structured data</a>
       <a href="#step3">Keywords</a>
       <a href="#step4">Content</a>
-      <a href="#step5">Linking</a>
-      <a href="#step6">Blog</a>
+      <a href="#step5">Speed</a>
+      <a href="#step6">Linking</a>
+      <a href="#step7">Blog</a>
     </nav>
   </div>
 </header>
@@ -258,7 +259,7 @@
 <div class="hero" id="plan">
   <div class="wrap">
     <p class="eyebrow">troopod.io · SEO plan</p>
-    <h1>Make Troopod rank for its own keywords, in 6 steps</h1>
+    <h1>Make Troopod rank for its own keywords, in 7 steps</h1>
     <p class="lead">We pick 3–4 keywords that mean "Troopod" in search, then point the whole site at three main pages.</p>
     <div class="effort"><span class="e-big">~40 hours</span><span class="e-txt">including research, plus about 4 additional hours for each existing page we optimise.</span></div>
 
@@ -285,11 +286,16 @@
       </li>
       <li>
         <span class="p-num">5</span>
-        <div class="p-body"><b>Internal linking</b><span>Every page and post links to one of the three main pages.</span></div>
+        <div class="p-body"><b>Page speed</b><span>Switch the site's PNG images to WebP and SVG so pages load faster.</span></div>
         <div class="p-when"><span class="badge later">After step 3</span></div>
       </li>
       <li>
         <span class="p-num">6</span>
+        <div class="p-body"><b>Internal linking</b><span>Every page and post links to one of the three main pages.</span></div>
+        <div class="p-when"><span class="badge later">After step 3</span></div>
+      </li>
+      <li>
+        <span class="p-num">7</span>
         <div class="p-body"><b>Move the blog</b><span>blog.troopod.io → troopod.io/blog, so its 140 posts help the main site.</span></div>
         <div class="p-when"><span class="badge later">After step 3</span></div>
       </li>
@@ -343,7 +349,7 @@
     <ul class="clean">
       <li>Client pitch pages (/pixis, /vestwell, /proposal/…, /agencyprogram, /troolaunchguide, /founderpage) and /founderslander are left out on purpose.</li>
       <li>/deck and the thank-you page are hidden from search (noindex), so they stay out too.</li>
-      <li>Once the blog moves onto troopod.io (step 6), every post gets added.</li>
+      <li>Once the blog moves onto troopod.io (step 7), every post gets added.</li>
     </ul>
   </div>
 </section>
@@ -637,7 +643,37 @@
 <!-- Step 5 -->
 <section id="step5">
   <div class="wrap">
-    <div class="step-label"><span class="num">5</span> After content mapping</div>
+    <div class="step-label"><span class="num">5</span> After brand keywords are chosen</div>
+    <h2>Page speed: lighter images</h2>
+    <p class="section-lead">Most of the site's images are PNG files, which are heavy. Switching them to WebP and SVG makes every page load faster.</p>
+
+    <div class="plain"><strong>In plain words</strong><p>Google ranks fast pages higher, and visitors leave slow ones. Images are the heaviest part of troopod.io, so shrinking them is the quickest speed win.</p></div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Format today</th><th>Files</th><th>Total size</th><th>Switch to</th></tr></thead>
+        <tbody>
+          <tr><td>PNG</td><td>73</td><td>~28 MB</td><td>SVG for logos and icons, WebP for photos and screenshots</td></tr>
+          <tr><td>JPG / JPEG</td><td>38</td><td>~20 MB</td><td>WebP</td></tr>
+          <tr><td>WebP, AVIF, SVG</td><td>15</td><td>~0.2 MB</td><td>Already light, no change</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The largest single files are a 4.2 MB website screenshot and a 2.8 MB team photo.</p>
+
+    <ol class="clean">
+      <li>Convert brand and client logos to SVG, so they stay sharp at any size.</li>
+      <li>Convert photos, team pictures and website screenshots to WebP, sized to how big they actually show on screen.</li>
+      <li>Lazy-load images below the first screen, so the top of the page appears first.</li>
+      <li>Run Google PageSpeed Insights before and after on the three main pages to measure the gain.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- Step 6 -->
+<section id="step6">
+  <div class="wrap">
+    <div class="step-label"><span class="num">6</span> After content mapping</div>
     <h2>Internal linking to the three main pages</h2>
     <p class="section-lead">Every supporting page and blog post links up to the main page that owns its topic, so their authority flows to those three pages.</p>
 
@@ -671,10 +707,10 @@
   </div>
 </section>
 
-<!-- Step 6 -->
-<section id="step6">
+<!-- Step 7 -->
+<section id="step7">
   <div class="wrap">
-    <div class="step-label"><span class="num">6</span> After keywords are chosen</div>
+    <div class="step-label"><span class="num">7</span> After keywords are chosen</div>
     <h2>Move the blog onto troopod.io</h2>
     <p class="section-lead">The blog's 140 posts live on a separate subdomain, so they build little authority for troopod.io itself. Moving them under troopod.io/blog fixes that.</p>
 
@@ -684,7 +720,7 @@
       <div class="to"><div class="lbl" style="color:var(--purple-deep)">After</div><div class="addr">troopod.io/blog</div></div>
     </div>
 
-    <div class="plain"><strong>In plain words</strong><p>Google treats blog.troopod.io as mostly a different website. Once the posts sit at troopod.io/blog, all their links and readers count toward Troopod's main site, and step 5 can send that strength to the three main pages.</p></div>
+    <div class="plain"><strong>In plain words</strong><p>Google treats blog.troopod.io as mostly a different website. Once the posts sit at troopod.io/blog, all their links and readers count toward Troopod's main site, and step 6 can send that strength to the three main pages.</p></div>
 
     <ol class="clean">
       <li>Change the blog's address setting to troopod.io/blog. The blog runs on Ghost 6.24, which supports this.</li>
@@ -693,7 +729,7 @@
       <li>Point the "Blogs" links in the site header and footer to /blog.</li>
       <li>Add the blog's posts to the sitemap.</li>
       <li>Check Google Search Console for errors over the next 4–6 weeks.</li>
-      <li>Apply steps 4 and 5 to the posts, starting with the ones that get the most traffic.</li>
+      <li>Apply steps 4 and 6 to the posts, starting with the ones that get the most traffic.</li>
     </ol>
 
     <div class="question"><span class="q">?</span><span>Who has server access to the blog and troopod.io web server settings?</span></div>
