@@ -162,7 +162,8 @@
   .connector.split .lines::after { content: ""; position: absolute; top: 0; left: 50%; height: 16px; border-left: 2px solid #CFCADF; }
   .connector.up .lines span { position: relative; }
   .connector.up .lines span::before { content: ""; position: absolute; top: -1px; left: -7px; border: 6px solid transparent; border-bottom: 8px solid #CFCADF; border-top: 0; }
-  .tree-foot { font-size: 14px; color: var(--muted); margin: 20px 0 0; }
+  .tree-note { max-width: none; margin: 0 0 28px; padding: 12px 16px; border-radius: 10px; background: var(--amber-tint); color: var(--text); font-size: 14px; text-align: center; }
+  .tree-note b { color: var(--amber); }
 
   /* Link flow */
   .flow { display: grid; grid-template-columns: 1fr 64px 1fr; gap: 0; align-items: stretch; margin-top: 32px; }
@@ -536,6 +537,7 @@
     <div class="plain"><strong>In plain words</strong><p>A keyword tree is a family tree for search terms. The brand sits at the top. Under it are a few brand keywords, under each of those are the keywords for one page, and blog posts hang off the bottom. Every keyword has exactly one home, so our own pages never compete with each other.</p></div>
 
     <div class="tree" role="img" aria-label="Keyword tree: Troopod at the top, four brand keywords each owned by a main page, page keywords under each, and blog posts linking up">
+      <p class="tree-note"><b>For depiction only.</b> The keywords in this tree are examples to show how it works. They are not the final keywords, which come from the research below.</p>
       <div class="tree-row">
         <div class="tree-level"><strong>Brand</strong><span>the name</span></div>
         <div class="tree-nodes one"><div class="node brand">Troopod</div></div>
@@ -570,7 +572,6 @@
           <div class="node blog">agency playbooks</div>
         </div>
       </div>
-      <p class="tree-foot">The keywords shown are examples. The real ones come from the research below.</p>
     </div>
 
     <h3>How the brand keywords get used</h3>
